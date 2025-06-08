@@ -1,7 +1,7 @@
 package ifsc.poo;
 
 public class Funcionario extends Pessoa {
-    private int idFuncionario;
+    private static int idFuncionario;
     private String dataInicioContrato;
 
     public Funcionario(String nome, String sobrenome, String cpf, String email, String dataInicioContrato) {

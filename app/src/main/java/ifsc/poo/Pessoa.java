@@ -17,6 +17,10 @@ public class Pessoa {
         return nome + " " + sobrenome;
     }
 
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
     public String getCPF() {
         return cpf;
     }

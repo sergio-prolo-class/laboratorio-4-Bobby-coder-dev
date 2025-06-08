@@ -3,9 +3,9 @@ package ifsc.poo;
 public class ClientePremium extends Cliente {
     private static int idClientePremium = 0;
     private String dataVencimento;
-    private FuncionarioCLTSenior representante;
+    private CLTSenior representante;
 
-    public ClientePremium(String nome, String sobrenome, String cpf, String email, String endereco, String telefone, boolean genero, String dataCadastro, String dataVencimento, FuncionarioCLTSenior representante) {
+    public ClientePremium(String nome, String sobrenome, String cpf, String email, String endereco, String telefone, boolean genero, String dataCadastro, String dataVencimento, CLTSenior representante) {
         super(nome, sobrenome, cpf, email, endereco, telefone, genero, dataCadastro);
         this.dataVencimento = dataVencimento;
         this.representante = representante;
@@ -20,7 +20,7 @@ public class ClientePremium extends Cliente {
         return idClientePremium;
     }
 
-    public FuncionarioCLTSenior getRepresentante() {
+    public CLTSenior getRepresentante() {
         return representante;
     }
 

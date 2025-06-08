@@ -1,11 +1,11 @@
 package ifsc.poo;
 
 public class Cliente extends Pessoa {
-    int static idCliente = 0;
-    String endereco;
-    String telefone;
-    boolean genero;
-    String dataCadastro;
+    private static int idCliente = 0;
+    private String endereco;
+    private String telefone;
+    private boolean genero;
+    private String dataCadastro;
 
     public Cliente(String nome, String sobrenome, String cpf, String email, String endereco, String telefone, boolean genero, String dataCadastro) {
         super(nome, sobrenome, cpf, email);

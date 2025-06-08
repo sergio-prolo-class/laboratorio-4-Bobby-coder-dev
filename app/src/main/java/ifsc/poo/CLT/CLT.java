@@ -11,7 +11,7 @@ public class CLT extends Funcionario{
     private Set<String> habilidades;
     private List<Estagiario> estagiariosOrientados;
 
-    public CLT(String nome, String sobrenome, String cpf, String email, String dataInicioContrato, int salario, int cargaHoraria, int numeroCarteiraTrabalho) {
+    public CLT(String nome, String sobrenome, String cpf, String email, String dataInicioContrato, int salario, int cargaHoraria, int numeroCarteiraTrabalho, Set<String> habilidades) {
         super(nome, sobrenome, cpf, email, dataInicioContrato);
         this.salario = salario;
         this.cargaHoraria = cargaHoraria;

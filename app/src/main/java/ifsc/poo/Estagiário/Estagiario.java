@@ -26,6 +26,10 @@ public class Estagiario extends Funcionario {
         return instituicaoEnsino;
     }
 
+    public CLT getOrientador() {
+        return orientador;
+    }
+
     @Override
     public String getResumo() {
         return "Estagiário: " + getNome() + ", Bolsa Auxílio: " + bolsaAuxilio + ", Carga Horária: " + cargaHoraria + ", Instituição: " + instituicaoEnsino +
