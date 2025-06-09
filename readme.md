@@ -144,7 +144,7 @@ direction TB
 
     Funcionario <|-- CLT
     Funcionario <|-- Estagiario
-    Funcionario <|-- Temporario
+    Funcionario <|-- FuncionarioTemp
 
     CLT <|-- CLTJunior
     CLT <|-- CLTPleno
@@ -153,8 +153,8 @@ direction TB
     Estagiario <|-- EstagiarioTI
     Estagiario <|-- EstagiarioADM
 
-    Temporario <|-- TempConsultor
-    Temporario <|-- TempTecnico
+    FuncionarioTemp <|-- TempConsultor
+    FuncionarioTemp <|-- TempTecnico
 
 
 ```
