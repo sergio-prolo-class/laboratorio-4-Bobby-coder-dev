@@ -1,4 +1,6 @@
 package ifsc.poo;
+import java.util.Set;
+import java.util.HashSet;
 
 public class Estagiario extends Funcionario {
     private int bolsaAuxilio;
@@ -6,7 +8,7 @@ public class Estagiario extends Funcionario {
     private String instituicaoEnsino;
     private CLT orientador;
 
-    public Estagiario(String nome, String sobrenome, String cpf, String email, String dataInicioContrato, int bolsaAuxilio, int cargaHoraria, String instituicaoEnsino, CLT orientador) {
+    public Estagiario(String nome, String sobrenome, String cpf, Set<String> email, String dataInicioContrato, int bolsaAuxilio, int cargaHoraria, String instituicaoEnsino, CLT orientador) {
         super(nome, sobrenome, cpf, email, dataInicioContrato);
         this.bolsaAuxilio = bolsaAuxilio;
         this.cargaHoraria = cargaHoraria;

@@ -1,4 +1,5 @@
 package ifsc.poo;
+import java.util.Set;
 
 public class Cliente extends Pessoa {
     private static int idCliente = 0;
@@ -7,8 +8,8 @@ public class Cliente extends Pessoa {
     private boolean genero;
     private String dataCadastro;
 
-    public Cliente(String nome, String sobrenome, String cpf, String email, String endereco, String telefone, boolean genero, String dataCadastro) {
-        super(nome, sobrenome, cpf, email);
+    public Cliente(String nome, String sobrenome, String cpf, Set<String> emails, String endereco, String telefone, boolean genero, String dataCadastro) {
+        super(nome, sobrenome, cpf, emails);
         this.endereco = endereco;
         this.telefone = telefone;
         this.genero = genero;

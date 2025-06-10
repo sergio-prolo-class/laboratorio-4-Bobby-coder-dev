@@ -1,10 +1,12 @@
 package ifsc.poo;
+import java.util.Set;
+import java.util.HashSet;
 
 public class EstagiarioADM extends Estagiario {
     private String setor;
     private String descricaoTarefa;
 
-    public EstagiarioADM(String nome, String sobrenome, String cpf, String email, String dataInicioContrato, int bolsaAuxilio, int cargaHoraria, String setor, String descricaoTarefa, String instituicaoEnsino, CLT orientador) {
+    public EstagiarioADM(String nome, String sobrenome, String cpf, Set<String> email, String dataInicioContrato, int bolsaAuxilio, int cargaHoraria, String setor, String descricaoTarefa, String instituicaoEnsino, CLT orientador) {
         super(nome, sobrenome, cpf, email, dataInicioContrato, bolsaAuxilio, cargaHoraria, instituicaoEnsino, orientador);
         this.setor = setor;
         this.descricaoTarefa = descricaoTarefa;

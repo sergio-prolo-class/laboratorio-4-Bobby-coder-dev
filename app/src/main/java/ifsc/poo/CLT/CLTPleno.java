@@ -2,14 +2,14 @@ package ifsc.poo;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Set;
-
+import java.util.HashSet;
 
 public class CLTPleno extends CLT {
     private String senioridade = "Pleno";
     private List<CLTJunior> funcionarios = new ArrayList<>();
     private CLTSenior chefe;
 
-    public CLTPleno(String nome, String sobrenome, String cpf, String email, String dataInicioContrato, int salario, int cargaHoraria, int numeroCarteiraTrabalho, CLTSenior chefe, Set<String> habilidades) {
+    public CLTPleno(String nome, String sobrenome, String cpf, Set<String> email, String dataInicioContrato, int salario, int cargaHoraria, int numeroCarteiraTrabalho, CLTSenior chefe, Set<String> habilidades) {
         super(nome, sobrenome, cpf, email, dataInicioContrato, salario, cargaHoraria, numeroCarteiraTrabalho, habilidades);
         this.chefe = chefe;
     }

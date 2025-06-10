@@ -1,10 +1,12 @@
 package ifsc.poo;
+import java.util.Set;
+import java.util.HashSet;
 
 public class EstagiarioTI extends Estagiario {
     private String numeroSerieComputador;
     private boolean remotaPresencial; // true = remoto, false = presencial
 
-    public EstagiarioTI(String nome, String sobrenome, String cpf, String email, String dataInicioContrato, int bolsaAuxilio, int cargaHoraria, String numeroSerieComputador, boolean remotaPresencial, String instituicaoEnsino, CLT orientador) {
+    public EstagiarioTI(String nome, String sobrenome, String cpf, Set<String> email, String dataInicioContrato, int bolsaAuxilio, int cargaHoraria, String numeroSerieComputador, boolean remotaPresencial, String instituicaoEnsino, CLT orientador) {
         super(nome, sobrenome, cpf, email, dataInicioContrato, bolsaAuxilio, cargaHoraria, instituicaoEnsino, orientador);
         this.numeroSerieComputador = numeroSerieComputador;
         this.remotaPresencial = remotaPresencial;

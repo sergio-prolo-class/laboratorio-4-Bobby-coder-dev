@@ -1,16 +1,19 @@
 package ifsc.poo;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Pessoa {
     protected String nome;
     protected String sobrenome;
     protected String cpf;
-    protected String email;
+    protected Set<String> email;
 
-    public Pessoa(String nome, String sobrenome, String cpf, String email) {
+
+    public Pessoa(String nome, String sobrenome, String cpf, Set<String> email) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.cpf = cpf;
-        this.email = email;
+        this.email = new HashSet<>(email);
     }
 
     public String getNome() {
@@ -26,7 +29,7 @@ public class Pessoa {
     }
 
     public String getEmail() {
-        return email;
+        return String.join(", ", email);
     }
 
     public String getResumo() {
